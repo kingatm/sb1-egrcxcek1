@@ -28,7 +28,7 @@ export const SocketProvider: React.FC<SocketProviderProps> = ({ children }) => {
   const [isConnected, setIsConnected] = useState(false);
 
   useEffect(() => {
-    const socketInstance = io('http://localhost:3001');
+    const socketInstance = io('https://sb1-egrcxcek1.onrender.com/');
     
     socketInstance.on('connect', () => {
       setIsConnected(true);
